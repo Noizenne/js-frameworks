@@ -1,5 +1,5 @@
 Process
-[ ] Create a new CRA app.
+[x] Create a new CRA app.
 [ ] Create a Header that has a Nav.
 [ ] Create a Cart Icon component and position this next to your Nav. This Cart Icon component will have an overlay that displays the number of items in the cart.
 [ ] Create a Footer component
