@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledNav = styled.nav`
-    font-family: font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 24px;
 
     ul {
