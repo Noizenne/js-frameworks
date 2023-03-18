@@ -1,5 +1,5 @@
 import React from "react"
-import { StyledNav } from "./styles"
+import { StyledNav } from "../../styles/Nav.styles"
 import { Link } from "react-router-dom"
 import CartIcon from "../Cart"
 import { Logo } from "../Logo"
@@ -7,9 +7,9 @@ import { Logo } from "../Logo"
 export default function Nav() {
     return (
       <StyledNav>
-        <nav className="NavBar">
-          <Logo src="./images/logo.jpg" alt="Logo"/>
           <ul>
+          <Logo src="./images/logo.jpg" alt="Logo"/>
+            <div className="NavLinks">
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -19,11 +19,11 @@ export default function Nav() {
             <li>
               <Link to="src/pages/contact">Contact</Link>
             </li>
-          </ul>
-          <div className="CartIcon">
+            </div>
+            <div className="CartIcon">
               <Link to="src/pages/checkout"><CartIcon /></Link>
-          </div>
-      </nav>
+            </div>
+          </ul>
       </StyledNav>
     )
 }

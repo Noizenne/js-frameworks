@@ -1,12 +1,10 @@
 import Nav from "../Nav"
-import { StyledHeader } from "./styles"
+import { StyledHeader } from "../../styles/Header.styles"
 
 export default function Header() {
     return (
       <StyledHeader>
-        <header>
         <Nav />
-      </header>
       </StyledHeader> 
       )
   }
