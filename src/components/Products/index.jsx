@@ -1,11 +1,11 @@
 import React from "react"
-import Product from "../Product"
+import ProductCard from "../ProductCard"
 
 export default function Products({products}) {
     return (
         <ul className="ProductsContainer">
             {products.map((product) => (
-            <Product key={product.id} product={product} />
+            <ProductCard key={product.id} product={product} />
             ))}
         </ul>
     )

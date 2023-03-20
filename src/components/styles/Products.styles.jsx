@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProductWrapper = styled.div`
-    border: 0;
+    border: 1px solid white;
     border-radius: 2rem;
     list-style: none;
     width: 200px;

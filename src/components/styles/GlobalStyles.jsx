@@ -20,5 +20,6 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 `
 export default GlobalStyles;

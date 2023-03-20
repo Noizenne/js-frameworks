@@ -8,6 +8,7 @@ import Contact from './pages/contact';
 import CartIcon from './components/layout/Cart';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './components/styles/GlobalStyles';
+import Product from './pages/product';
 
 const theme = {
   colors: {
@@ -22,13 +23,12 @@ function App() {
       <GlobalStyles />
       <div className="App">
       <Routes>
-
         <Route path='/' element={<Layout />} />
         <Route index element={<Home />} />
-        <Route path='/src/pages/products' element={<Products />} />
-        <Route path='/src/pages/products/:id'></Route>
-        <Route path='/src/pages/contact' element={<Contact />} />
-        <Route path='/src/pages/checkout' element={<CartIcon />} />
+        <Route path='src/pages/products' element={<Products />} />
+        <Route path='src/pages/product/:id' element={<Product />} />
+        <Route path='src/pages/contact' element={<Contact />} />
+        <Route path='src/pages/checkout' element={<CartIcon />} />
       </Routes>
     </div>
     </ThemeProvider>

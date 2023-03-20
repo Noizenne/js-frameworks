@@ -2,7 +2,8 @@ import React from "react"
 import * as S from "../styles/Products.styles"
 import { Star } from "@mui/icons-material";
 
-export default function Product({product: {title, imageUrl, price, discountedPrice, rating}}) {
+export default function ProductCard({product: {id, title, imageUrl, price, discountedPrice, rating}}) {
+
     return (
         <S.ProductWrapper>
             <S.ProductImageContainer>
@@ -18,7 +19,7 @@ export default function Product({product: {title, imageUrl, price, discountedPri
             </S.ProductPrices>
             <S.ProductButtons>
             <S.ProductAddButton>Add to cart</S.ProductAddButton>
-            <S.ProductsView href="/src/pages/product/:id">View</S.ProductsView>
+            <S.ProductsView href={`/src/pages/product/${id}`}>View</S.ProductsView>
             </S.ProductButtons>
         </S.ProductWrapper>
     )
