@@ -8,13 +8,10 @@ export default function Nav() {
     return (
       <StyledNav>
           <ul>
-          <Logo src="./images/logo.jpg" alt="Logo"/>
+            <Link to="/"><Logo src="./images/logo.jpg" alt="Logo"/> </Link>
             <div className="NavLinks">
             <li>
               <Link to="/">Home</Link>
-            </li>
-            <li>
-                <Link to="src/pages/products">Products</Link>
             </li>
             <li>
               <Link to="src/pages/contact">Contact</Link>
