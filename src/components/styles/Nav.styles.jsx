@@ -5,11 +5,14 @@ export const StyledNav = styled.nav`
     font-size: 24px;
     display: flex;
     justify-content: center;
+    border-bottom: 1px solid ${({theme}) => theme.colors.pink};
+    padding: 0 2rem;
 
     ul {
         display: flex;
         justify-content: space-between;
         padding: 0;
+        margin: 0;
         width: 100%;
 
         .NavLinks {
@@ -25,7 +28,7 @@ export const StyledNav = styled.nav`
 
         a {
         text-decoration: none;
-        color: ${({theme}) => theme.colors.color};
+        color: ${({theme}) => theme.colors.pink};
         }
 
         .CartIcon {

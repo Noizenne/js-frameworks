@@ -42,7 +42,6 @@ export default function Product() {
 
     return (
         <div>
-            <Layout />
             <ViewProduct product={product}/>
         </div>
     )

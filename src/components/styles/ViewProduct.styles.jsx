@@ -13,7 +13,7 @@ export const StyledInfoContainer = styled.div`
     margin-top: 50px;
     width: 800px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 `
 
 export const StyledImg = styled.img`
@@ -26,7 +26,10 @@ export const StyledImg = styled.img`
 export const StyledProductInfo = styled.div`
     width: 350px;
     text-align: left;
-    padding-left: 0px;
+    background-color: #f7eaed;
+    border: 1px solid ${({theme}) => theme.colors.pink};
+    border-radius: 2rem;
+    padding: 2rem;
 `
 export const StyledPriceContainer = styled.div`
     display: flex;
@@ -41,21 +44,29 @@ export const StyledPrice = styled.div`
     text-decoration: ${(props) => (props.isValid ? 'none' : 'line-through')};
 `
 export const StyledDiscountedPrice = styled.div`
-color: #4D0F1A;
+    color: #4D0F1A;
 `
 
 export const StyledBtn = styled.button`
     width: 130px;
-    height: 25px;
-    background-color: #4D0F1A;
+    height: 30px;
+    background-color: ${({theme}) => theme.colors.green};
     color: #fff;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 `
 export const CalcedDiscount = styled.div`
-position: absolute;
-color: red;
-font-size: 20px;
-font-weight: bold;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    float: right;
+    color: #ffffff;
+    background-color: #ff0000;
+    width: 45px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 60%;
 `

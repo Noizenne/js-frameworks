@@ -12,7 +12,7 @@ export const StyledSearch = styled.div`
 export const StyledInputWrapper = styled.div`
     display: flex;
     width: 100%;
-    background-color: ${({theme}) => theme.colors.nav};
+    background-color: ${({theme}) => theme.colors.white};
     border-radius: 5px;
     padding: 3px;
 `
@@ -22,7 +22,7 @@ export const StyledInput = styled.input`
     width: 100%;
     border-radius: 10px;
     background-color: transparent;
-    color: ${({theme}) => theme.colors.color};
+    color: #000;
     margin-left: 5px;
 
     :focus {
@@ -30,13 +30,14 @@ export const StyledInput = styled.input`
     }
 
     ::placeholder {
-        color: ${({theme}) => theme.colors.color};
+        color: ${({theme}) => theme.colors.pink};
     }
 `
 
 export const StyledSearchResults = styled.div`
     width: 100%;
-    border: 0.5px solid ${({theme}) => theme.colors.nav};
+    background-color: ${({theme}) => theme.colors.white};
+    border: 0.5px solid ${({theme}) => theme.colors.pink};
     border-top: none;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 `

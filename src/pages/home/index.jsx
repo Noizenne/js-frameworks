@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 import { API_URL } from "../../constants/url";
-import Layout from "../../components/layout/Layout"
 import Products from "../../components/Products";
 import SearchBar from "../../components/Search";
+import Layout from "../../components/layout/Layout";
 
 export default function Home() {
 
@@ -52,7 +52,6 @@ export default function Home() {
 
   return (
   <div>
-    <Layout />
     <SearchBar filteredProducts={filteredProducts} searchInput={searchInput} onSearchInputChange={onSearchInputChange}/>
     <h1>Products</h1>
     <Products products={products} />

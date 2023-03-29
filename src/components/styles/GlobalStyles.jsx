@@ -7,18 +7,31 @@ const GlobalStyles = createGlobalStyle`
 }
 
 body {
-    background: ${({theme}) => theme.colors.color};
+    background: ${({theme}) => theme.colors.bg};
     margin: 0;
 }
 
 h1 {
     font-size: 30px;
+    color: ${({theme}) => theme.colors.pink};
+    padding: 0 4rem;
+}
+
+h2 {
+    font-size: 28px;
+    color: ${({theme}) => theme.colors.pink};
+}
+
+h3 {
+    font-size: 25px;
+    color: ${({theme}) => theme.colors.pink};
 }
 
 .ProductsContainer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 0 4rem;
 }
 
 `

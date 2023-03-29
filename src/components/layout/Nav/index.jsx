@@ -14,11 +14,11 @@ export default function Nav() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="src/pages/contact">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </li>
             </div>
             <div className="CartIcon">
-              <Link to="src/pages/checkout"><CartIcon /></Link>
+              <Link to="/checkout"><CartIcon /></Link>
             </div>
           </ul>
       </StyledNav>

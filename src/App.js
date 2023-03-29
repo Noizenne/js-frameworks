@@ -1,36 +1,33 @@
-import './App.css';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Home from './pages/home';
-import Products from './pages/products';
 import Contact from './pages/contact';
-import CartIcon from './components/layout/Cart';
+import Checkout from './pages/checkout';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './components/styles/GlobalStyles';
 import Product from './pages/product';
 
 const theme = {
   colors: {
-    nav: '#5A6C8E',
-    color: '#fff'
-  },
+    white: '#fff',
+    pink: '#E891D5',
+    bg: '#F4F4F4',
+    green: '#00C013'
+  }
 }
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <div className="App">
       <Routes>
         <Route path='/' element={<Layout />} />
         <Route index element={<Home />} />
-        <Route path='src/pages/products' element={<Products />} />
-        <Route path='src/pages/product/:id' element={<Product />} />
-        <Route path='src/pages/contact' element={<Contact />} />
-        <Route path='src/pages/checkout' element={<CartIcon />} />
+        <Route path='/product/:id' element={<Product />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/checkout' element={<Checkout />} />
       </Routes>
-    </div>
     </ThemeProvider>
   );
 }

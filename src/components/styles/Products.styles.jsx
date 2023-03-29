@@ -54,7 +54,7 @@ export const ProductButtons = styled.div`
 `;
 
 export const ProductAddButton = styled.button`
-    background-color: #4D0F1A;
+    background-color: ${({theme}) => theme.colors.green};
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -65,9 +65,9 @@ export const ProductAddButton = styled.button`
 
 export const ProductsView = styled.a`
     border-radius: 5px;
-    border: #4D0F1A 1px solid;
+    border: ${({theme}) => theme.colors.green} 1px solid;
     padding: 2px;
-    color: #4D0F1A;
+    color: ${({theme}) => theme.colors.green};
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
