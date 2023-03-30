@@ -20,7 +20,7 @@ export const StyledItem = styled.div`
     align-items: center;
     margin: 10px;
     border: 1px solid ${({theme}) => theme.colors.pink};
-    background-color: #f7eaed;
+    background-color: ${({theme}) => theme.colors.lightPink};
     border-radius: 2rem;
     padding: 1rem;
 

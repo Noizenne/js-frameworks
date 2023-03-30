@@ -12,6 +12,7 @@ const theme = {
   colors: {
     white: '#fff',
     pink: '#E891D5',
+    lightPink: '#f7eaed',
     bg: '#F4F4F4',
     green: '#00C013'
   }
