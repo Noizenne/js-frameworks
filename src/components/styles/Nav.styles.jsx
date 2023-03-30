@@ -6,7 +6,8 @@ export const StyledNav = styled.nav`
     display: flex;
     justify-content: center;
     border-bottom: 1px solid ${({theme}) => theme.colors.pink};
-    padding: 0 2rem;
+    padding: 1rem 2rem;
+    margin-bottom: 20px;
 
     ul {
         display: flex;

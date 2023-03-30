@@ -6,7 +6,7 @@ export const ProductWrapper = styled.div`
     list-style: none;
     width: 200px;
     margin: 1rem;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(255, 163, 228, 0.2) 0px 8px 24px;
 `;
 
 export const ProductTitle = styled.div`
@@ -37,7 +37,7 @@ export const ProductRating = styled.div`
     `;
 
 export const ProductPrice = styled.div`
-    color: ${(props) => (props.isValid ? 'initial' : 'grey')};
+    color: ${(props) => (props.isValid ? 'black' : 'red')};
     text-decoration: ${(props) => (props.isValid ? 'none' : 'line-through')};
 `;
 
@@ -54,7 +54,7 @@ export const ProductButtons = styled.div`
 `;
 
 export const ProductAddButton = styled.button`
-    background-color: ${({theme}) => theme.colors.green};
+    background-color: ${({theme}) => theme.colors.blue};
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -65,9 +65,9 @@ export const ProductAddButton = styled.button`
 
 export const ProductsView = styled.a`
     border-radius: 5px;
-    border: ${({theme}) => theme.colors.green} 1px solid;
+    border: ${({theme}) => theme.colors.blue} 1px solid;
     padding: 2px;
-    color: ${({theme}) => theme.colors.green};
+    color: ${({theme}) => theme.colors.blue};
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;

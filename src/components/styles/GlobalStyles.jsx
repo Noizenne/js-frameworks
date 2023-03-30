@@ -13,13 +13,13 @@ body {
 
 h1 {
     font-size: 30px;
-    color: ${({theme}) => theme.colors.pink};
+    color: ${({theme}) => theme.colors.blue};
     padding: 0 4rem;
 }
 
 h2 {
     font-size: 28px;
-    color: ${({theme}) => theme.colors.pink};
+    color: ${({theme}) => theme.colors.blue};
 }
 
 h3 {

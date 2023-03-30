@@ -12,11 +12,10 @@ export const StyledWrapper = styled.div`
 `
 
 export const StyledContainer = styled.div`
-    background-color: #f7eaed;
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
-    border: 1px solid ${({theme}) => theme.colors.pink};
+    border: 1px solid ${({theme}) => theme.colors.blue};
 
 `
 export const StyledDesc = styled.div`

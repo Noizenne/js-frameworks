@@ -19,8 +19,8 @@ export const StyledItem = styled.div`
     flex-direction: row;
     align-items: center;
     margin: 10px;
-    border: 1px solid ${({theme}) => theme.colors.pink};
-    background-color: ${({theme}) => theme.colors.lightPink};
+    border: 1px solid ${({theme}) => theme.colors.blue};
+    background-color: ${({theme}) => theme.colors.white};
     border-radius: 2rem;
     padding: 1rem;
 
@@ -56,8 +56,8 @@ export const StyledClearBtn = styled.button`
     margin: 5px;
     cursor: pointer;
     background-color: ${({theme}) => theme.colors.white};
-    color: ${({theme}) => theme.colors.green};
-    border: 1px solid ${({theme}) => theme.colors.green};
+    color: ${({theme}) => theme.colors.blue};
+    border: 1px solid ${({theme}) => theme.colors.blue};
     border-radius: 20px;
     width: 100px;
     height: 30px;
@@ -65,7 +65,7 @@ export const StyledClearBtn = styled.button`
 export const StyledCheckoutBtn = styled.button`
     margin: 5px;
     cursor: pointer;
-    background-color: ${({theme}) => theme.colors.green};
+    background-color: ${({theme}) => theme.colors.blue};
     color: ${({theme}) => theme.colors.white};
     border: none;
     border-radius: 20px;

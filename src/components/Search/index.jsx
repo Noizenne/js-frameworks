@@ -24,7 +24,7 @@ export default function SearchBar({searchInput, onSearchInputChange, filteredPro
             </S.StyledInputWrapper>
             <S.StyledSearchResults> 
                 {filteredProducts.map((item) => (
-                    <S.StyledSearchedItem href={`/src/pages/product/${item.id}`} key={item.id}>
+                    <S.StyledSearchedItem href={`/product/${item.id}`} key={item.id}>
                         {item.title}
                     </S.StyledSearchedItem>
                 ))}

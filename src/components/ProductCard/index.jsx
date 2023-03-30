@@ -23,11 +23,11 @@ export default function ProductCard({product}) {
             <S.ProductRating><Star sx={{color: "orange"}}/>({rating})</S.ProductRating>
             </S.ProductTitle>
             <S.ProductPrices>
-                <div>{discountedPrice < price && discountedPrice}</div>
+                <div>NOK {discountedPrice < price && discountedPrice}</div>
                 <S.ProductPrice isValid={price === discountedPrice}>{price}</S.ProductPrice>
             </S.ProductPrices>
             <S.ProductButtons>
-            <S.ProductsView href={`/product/${id}`}>View</S.ProductsView>
+            <S.ProductsView href={`/product/${id}/`}>View</S.ProductsView>
             <S.ProductAddButton onClick={() => handleATCBtn()}>Add to cart</S.ProductAddButton>
             </S.ProductButtons>
         </S.ProductWrapper>

@@ -4,7 +4,6 @@ import * as R from "../styles/ProductReviews.styles";
 import { Rating } from "@mui/material";
 import ProductReviews from "../ProductReviews";
 import { useCart } from "../../zustandHook/useCart";
-import { Reviews } from "@mui/icons-material";
 
 export default function ViewProduct({ product }) {
 
@@ -33,9 +32,11 @@ export default function ViewProduct({ product }) {
                 <S.StyledInfoContainer>
                     <S.StyledImg src={imageUrl} alt={title} />
                      <S.StyledProductInfo>
-                     <S.CalcedDiscount>  
-                        {showDiscount}
-                    </S.CalcedDiscount>
+                     {discount !== showDiscount && (
+                        <S.CalcedDiscount> 
+                            {showDiscount}
+                        </S.CalcedDiscount> 
+                    )}
                         <h2>{title}</h2>
                         <div>
                             <Rating 

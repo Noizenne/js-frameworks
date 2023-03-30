@@ -11,10 +11,8 @@ import Product from './pages/product';
 const theme = {
   colors: {
     white: '#fff',
-    pink: '#E891D5',
-    lightPink: '#f7eaed',
-    bg: '#F4F4F4',
-    green: '#00C013'
+    blue: '#4c00ff',
+    bg: '#d9e4ff'
   }
 }
 
@@ -23,11 +21,12 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Routes>
-        <Route path='/' element={<Layout />} />
-        <Route index element={<Home />} />
-        <Route path='/product/:id' element={<Product />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/checkout' element={<Checkout />} />
+      <Route path='/' element={<Layout />} >
+          <Route index element={<Home />} />
+          <Route path='/product/:id' element={<Product />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/checkout' element={<Checkout />} />
+        </Route>
       </Routes>
     </ThemeProvider>
   );

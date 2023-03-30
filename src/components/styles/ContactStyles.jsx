@@ -12,7 +12,7 @@ export const StyledWrapper = styled.div`
         display: flex;
         justify-content: center;
         flex-direction: column;
-        background-color:  ${({theme}) => theme.colors.lightPink};
+        background-color:  ${({theme}) => theme.colors.white};
         border: 1px solid ${({theme}) => theme.colors.pink};
         border-radius: 20px;
         padding: 2rem;
@@ -25,10 +25,16 @@ export const StyledWrapper = styled.div`
             border: 1px solid ${({theme}) => theme.colors.pink};
             border-radius: 20px;
         }
+        p {
+            color: red;
+            font-size: 14px;
+            margin: 0;
+        }
         button {
             width: 50%;
             height: 30px;
             margin: auto;
+            margin-top: 10px;
             background-color:  ${({theme}) => theme.colors.green};
             color: ${({theme}) => theme.colors.white};
             border-radius: 20px;

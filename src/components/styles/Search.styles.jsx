@@ -40,6 +40,7 @@ export const StyledSearchResults = styled.div`
     border: 0.5px solid ${({theme}) => theme.colors.pink};
     border-top: none;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: sticky;
 `
 
 export const StyledSearchedItem = styled.a`

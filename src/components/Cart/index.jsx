@@ -62,7 +62,7 @@ export default function CartItems() {
                     </div>
                     <S.StyledBtns>
                         <S.StyledClearBtn onClick={() => clearCart()} >Clear Cart</S.StyledClearBtn>
-                        <Link to="src/pages/checkoutSuccess">
+                        <Link to="/checkoutSuccess">
                             <S.StyledCheckoutBtn onClick={() => clearCart()} >Checkout</S.StyledCheckoutBtn>
                         </Link>
                     </S.StyledBtns>

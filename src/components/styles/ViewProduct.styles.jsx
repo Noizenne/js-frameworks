@@ -14,6 +14,8 @@ export const StyledInfoContainer = styled.div`
     width: 800px;
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 40px;
+    border-bottom: 1px solid ${({theme}) => theme.colors.blue};
 `
 
 export const StyledImg = styled.img`
@@ -26,9 +28,6 @@ export const StyledImg = styled.img`
 export const StyledProductInfo = styled.div`
     width: 350px;
     text-align: left;
-    background-color: #f7eaed;
-    border: 1px solid ${({theme}) => theme.colors.pink};
-    border-radius: 2rem;
     padding: 2rem;
 `
 export const StyledPriceContainer = styled.div`
@@ -40,7 +39,7 @@ export const StyledPriceContainer = styled.div`
     font-size: 20px;
 `
 export const StyledPrice = styled.div`
-    color: ${(props) => (props.isValid ? 'initial' : 'grey')};
+    color: ${(props) => (props.isValid ? 'black' : 'red')};
     text-decoration: ${(props) => (props.isValid ? 'none' : 'line-through')};
 `
 export const StyledDiscountedPrice = styled.div`
@@ -50,7 +49,7 @@ export const StyledDiscountedPrice = styled.div`
 export const StyledBtn = styled.button`
     width: 130px;
     height: 30px;
-    background-color: ${({theme}) => theme.colors.green};
+    background-color: ${({theme}) => theme.colors.blue};
     color: #fff;
     font-weight: bold;
     border: none;

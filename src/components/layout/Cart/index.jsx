@@ -7,7 +7,7 @@ export default function CartIcon() {
 
 return (
     <div>
-        <ShoppingCart fontSize="large" style={{color: '#E891D5'}}/>
+        <ShoppingCart fontSize="large" style={{color: '#4c00ff'}}/>
         <span>
             <span>{cart.reduce((totalQnty, cart) => totalQnty + cart.totalItems, 0)}</span>
         </span>
