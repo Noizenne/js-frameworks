@@ -7,6 +7,7 @@ import Checkout from './pages/checkout';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './components/styles/GlobalStyles';
 import Product from './pages/product';
+import CheckoutMessage from './components/CheckoutSuccess';
 
 const theme = {
   colors: {
@@ -26,6 +27,7 @@ function App() {
           <Route path='/product/:id' element={<Product />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/checkout' element={<Checkout />} />
+          <Route path='/checkoutSuccess' element={<CheckoutMessage />} />
         </Route>
       </Routes>
     </ThemeProvider>
