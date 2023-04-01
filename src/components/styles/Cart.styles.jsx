@@ -1,5 +1,5 @@
 import styled from "styled-components";
-export const StyledHeader = styled.h2`
+export const StyledHeader = styled.h1`
     display: flex;
     justify-content: center;
 `
@@ -11,6 +11,11 @@ export const StyledWrapper = styled.div`
 export const StyledContainer = styled.div`
     display: flex;
     flex-direction: column;
+     
+    @media (max-width: 465px) {
+        width: 300px;
+        height: 100px;
+    }
 `
 
 export const StyledItem = styled.div`
@@ -33,6 +38,15 @@ export const StyledItem = styled.div`
     p {
         margin: 0 10px;
     }
+
+    @media (max-width: 465px) {
+        width: 100%;
+      img {
+        display:none
+      }
+
+      font-size: 13px;
+    }
 `
 
 export const StyledBtn = styled.button`
@@ -43,14 +57,20 @@ export const StyledBtn = styled.button`
     border: none;
     cursor: pointer;
 `
+export const StyledTotalHeader = styled.h3`
+    display: flex;
+    justify-content: center;
+`
 
 export const StyledTotal = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 30px;
 `
 export const StyledBtns = styled.div`
     display: flex;
+    margin-bottom: 30px;
 `
 export const StyledClearBtn = styled.button`
     margin: 5px;
@@ -61,6 +81,7 @@ export const StyledClearBtn = styled.button`
     border-radius: 20px;
     width: 100px;
     height: 30px;
+    
 `
 export const StyledCheckoutBtn = styled.button`
     margin: 5px;

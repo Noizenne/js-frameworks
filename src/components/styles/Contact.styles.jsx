@@ -2,15 +2,16 @@ import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
     margin: auto;
-    width: 50%;
+    width: 300px;
 
     h1 {
+        display: flex;
+        justify-content: center;
         text-align: center;
     }
 
     form {
         display: flex;
-        justify-content: center;
         flex-direction: column;
         background-color:  ${({theme}) => theme.colors.white};
         border: 1px solid ${({theme}) => theme.colors.blue};

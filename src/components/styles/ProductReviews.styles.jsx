@@ -2,23 +2,24 @@ import styled from "styled-components";
 
 
 export const StyledProductReviews = styled.div`
+    margin: 0 2rem;
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
 
-    @media (max-width: 400px) {
-        margin: auto;
-        width: 300px;
+        h3 {
+            display: flex;
+            justify-content: center;
+        }
     }
 `
 export const StyledWrapper = styled.div`
     display: flex;
-
+    justify-content: center;
     @media (max-width: 600px) {
         display: flex;
         flex-direction: column;
-        width: 400px;
-    }
 
-    @media (max-width: 400px) {
-        width: 300px;
     }
 `
 

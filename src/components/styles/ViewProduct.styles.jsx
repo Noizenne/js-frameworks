@@ -7,19 +7,15 @@ export const StyledViewProduct = styled.div`
 export const StyledContainer = styled.div`
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 `
 
 export const StyledInfoContainer = styled.div`
     margin-top: 50px;
-    width: 800px;
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 40px;
     border-bottom: 1px solid ${({theme}) => theme.colors.blue};
-
-    @media (max-width: 800px) {
-        width: 600px;
-    }
 
     @media (max-width: 600px) {
         flex-direction: column;
