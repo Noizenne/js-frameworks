@@ -3,6 +3,7 @@ import Layout from "../../components/layout/Layout";
 import { API_URL } from "../../constants/url";
 import { useParams } from "react-router-dom";
 import ViewProduct from "../../components/ViewProduct";
+import Loader from "../../components/Loader";
 
 export default function Product() {
     const [product, setProduct] = useState([]);
@@ -33,7 +34,7 @@ export default function Product() {
     }, [id]);
   
     if(isLoading) {
-      return <div>Loading...</div>
+      return <Loader />
     }
   
     if(isError) {

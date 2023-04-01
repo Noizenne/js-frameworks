@@ -3,6 +3,7 @@ import { API_URL } from "../../constants/url";
 import Products from "../../components/Products";
 import SearchBar from "../../components/Search";
 import Layout from "../../components/layout/Layout";
+import Loader from "../../components/Loader";
 
 export default function Home() {
 
@@ -35,7 +36,7 @@ export default function Home() {
   }, []);
 
   if(isLoading) {
-    return <div>Loading...</div>
+    return <Loader />
   }
 
   if(isError) {
