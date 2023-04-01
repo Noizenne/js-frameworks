@@ -29,7 +29,7 @@ export default function Product() {
         }
       }
       
-      getProduct(API_URL + "/" + `${id}`);
+      getProduct(API_URL + `/${id}`);
   
     }, [id]);
   
