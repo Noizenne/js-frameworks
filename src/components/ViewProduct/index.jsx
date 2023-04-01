@@ -10,8 +10,8 @@ export default function ViewProduct({ product }) {
 
     useEffect(() => {
         document.title =  `Dings | ${product.title}`
-    });
-    
+    }, []);
+
     const {id,
         title,
         imageUrl, 

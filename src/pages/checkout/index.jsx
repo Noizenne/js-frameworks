@@ -7,6 +7,7 @@ export default function Checkout() {
   useEffect(() => {
     document.title = "Dings | Checkout";
   }, []);
+  
     return (
       <div>
         <StyledHeader>My Cart</StyledHeader>
