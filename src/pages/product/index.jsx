@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import Layout from "../../components/layout/Layout";
 import { API_URL } from "../../constants/url";
 import { useParams } from "react-router-dom";
 import ViewProduct from "../../components/ViewProduct";
