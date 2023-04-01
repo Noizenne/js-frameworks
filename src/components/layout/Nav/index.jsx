@@ -3,7 +3,6 @@ import { StyledNav } from "../../styles/Nav.styles"
 import { NavLink } from "react-router-dom"
 import CartIcon from "../Cart"
 import { Menu } from "@mui/icons-material"
-import { fontSize } from "@mui/system"
 
 export default function Nav() {
   const [showNavbar, setShowNavbar] = useState(false)

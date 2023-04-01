@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react"
 import { API_URL } from "../../constants/url";
 import Products from "../../components/Products";
 import SearchBar from "../../components/Search";
-import Layout from "../../components/layout/Layout";
 import Loader from "../../components/Loader";
 import ErrorMessage from "../../components/Error";
 
