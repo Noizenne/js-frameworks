@@ -69,7 +69,14 @@ export default function CartItems() {
                 </>
                 ) : (
                 <div>
-                    <p>No items in the cart.</p>
+                    <p>No items in the cart yet.</p>
+                    <S.StyledWrapper>
+                    <Link to="/">
+                        <S.StyledCheckoutBtn>
+                            Back to Shopping
+                        </S.StyledCheckoutBtn>
+                    </Link>
+                    </S.StyledWrapper>
                 </div>
                 )}
             </S.StyledContainer>

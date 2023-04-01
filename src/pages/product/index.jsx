@@ -4,6 +4,7 @@ import { API_URL } from "../../constants/url";
 import { useParams } from "react-router-dom";
 import ViewProduct from "../../components/ViewProduct";
 import Loader from "../../components/Loader";
+import ErrorMessage from "../../components/Error";
 
 export default function Product() {
     const [product, setProduct] = useState([]);
@@ -38,7 +39,7 @@ export default function Product() {
     }
   
     if(isError) {
-      return <div>Error</div>
+      return <ErrorMessage />
     } 
 
     return (

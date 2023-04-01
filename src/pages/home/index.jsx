@@ -4,6 +4,7 @@ import Products from "../../components/Products";
 import SearchBar from "../../components/Search";
 import Layout from "../../components/layout/Layout";
 import Loader from "../../components/Loader";
+import ErrorMessage from "../../components/Error";
 
 export default function Home() {
 
@@ -40,7 +41,7 @@ export default function Home() {
   }
 
   if(isError) {
-    return <div>Error</div>
+    return <ErrorMessage />
   }
 
   function onSearchInputChange(value) {

@@ -18,7 +18,7 @@ export default function ProductReviews({reviews}) {
         <S.StyledWrapper>
             {userReviews && userReviews.length > 0 ? (
                 userReviews
-            ) : (<div>No reviews</div>)}
+            ) : (<div>No reviews on this product yet.</div>)}
         </S.StyledWrapper>
     )
 }
