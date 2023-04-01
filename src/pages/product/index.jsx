@@ -28,6 +28,7 @@ export default function Product() {
           setIsLoading(false)
         }
       }
+
       
       getProduct(API_URL + `/${id}`);
   

@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { StyledNotFound } from "../../components/styles/NotFound.styles";
 import { Block } from "@mui/icons-material";
 
 export default function NotFound() {
+
+    useEffect(() => {
+        document.title = "Dings | Page not found";
+    }, [])
+    
     return (
         <StyledNotFound>
             <div><Block fontSize="large" style={{color: 'red'}}/></div>
