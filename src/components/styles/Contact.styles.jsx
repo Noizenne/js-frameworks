@@ -13,7 +13,7 @@ export const StyledWrapper = styled.div`
         justify-content: center;
         flex-direction: column;
         background-color:  ${({theme}) => theme.colors.white};
-        border: 1px solid ${({theme}) => theme.colors.pink};
+        border: 1px solid ${({theme}) => theme.colors.blue};
         border-radius: 20px;
         padding: 2rem;
 
@@ -22,8 +22,12 @@ export const StyledWrapper = styled.div`
         }
         input {
             height: 35px;
-            border: 1px solid ${({theme}) => theme.colors.pink};
+            border: 1px solid ${({theme}) => theme.colors.blue};
             border-radius: 20px;
+
+            :focus {
+                outline: 1px solid ${({theme}) => theme.colors.blue};
+            }
         }
         p {
             color: red;
@@ -35,7 +39,7 @@ export const StyledWrapper = styled.div`
             height: 30px;
             margin: auto;
             margin-top: 10px;
-            background-color:  ${({theme}) => theme.colors.green};
+            background-color:  ${({theme}) => theme.colors.blue};
             color: ${({theme}) => theme.colors.white};
             border-radius: 20px;
             border: none;

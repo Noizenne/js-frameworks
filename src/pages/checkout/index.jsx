@@ -1,5 +1,5 @@
 import CartItems from "../../components/Cart"
-import { StyledHeader } from "../../components/styles/CartStyles"
+import { StyledHeader } from "../../components/styles/Cart.styles"
 
 export default function Checkout() {
     return (

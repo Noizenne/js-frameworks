@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
-import * as S from "../styles/ContactStyles";
+import * as S from "../styles/Contact.styles";
 
 const schema = yup
     .object({

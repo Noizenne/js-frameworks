@@ -1,7 +1,7 @@
 import React from "react";
 import { useCart } from "../../zustandHook/useCart";
 import { Link } from "react-router-dom";
-import * as S from "../styles/CartStyles";
+import * as S from "../styles/Cart.styles";
 import { Add } from "@mui/icons-material";
 import { Remove } from "@mui/icons-material";
 import { Clear } from "@mui/icons-material";

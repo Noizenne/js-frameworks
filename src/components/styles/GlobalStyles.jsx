@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
 body {
     background: ${({theme}) => theme.colors.bg};
     margin: 0;
+    font-family: 'Inter', sans-serif;
 }
 
 h1 {
@@ -26,6 +27,7 @@ h3 {
     font-size: 25px;
     color: ${({theme}) => theme.colors.pink};
 }
+
 
 .ProductsContainer {
     display: flex;

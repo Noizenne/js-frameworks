@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledWrapper } from "../styles/SuccessStyles";
+import { StyledWrapper } from "../styles/Success.styles";
 import { CheckCircle } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { ArrowBackIos } from "@mui/icons-material";

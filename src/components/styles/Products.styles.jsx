@@ -15,6 +15,10 @@ export const ProductTitle = styled.div`
 `;
 
 export const ProductHeading = styled.h4`
+    margin: 5px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `;
 
 export const ProductImageContainer = styled.div`
