@@ -37,7 +37,7 @@ export const StyledInput = styled.input`
 export const StyledSearchResults = styled.div`
     width: 100%;
     background-color: ${({theme}) => theme.colors.white};
-    border: 0.5px solid ${({theme}) => theme.colors.pink};
+
     border-top: none;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: sticky;
