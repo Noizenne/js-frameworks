@@ -15,7 +15,7 @@ export default function SearchBar({searchInput, onSearchInputChange, filteredPro
             <S.StyledInputWrapper>
                 <Search 
                 fontSize="large" 
-                sx={{color: "white"}} 
+                sx={{color: "blue"}} 
                 />
                 <S.StyledInput 
                 onChange={onChange} 

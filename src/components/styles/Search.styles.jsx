@@ -30,7 +30,7 @@ export const StyledInput = styled.input`
     }
 
     ::placeholder {
-        color: ${({theme}) => theme.colors.pink};
+        color: ${({theme}) => theme.colors.blue};
     }
 `
 
