@@ -16,6 +16,14 @@ export const StyledInfoContainer = styled.div`
     justify-content: space-evenly;
     padding-bottom: 40px;
     border-bottom: 1px solid ${({theme}) => theme.colors.blue};
+
+    @media (max-width: 800px) {
+        width: 600px;
+    }
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
 `
 
 export const StyledImg = styled.img`
@@ -23,12 +31,23 @@ export const StyledImg = styled.img`
     border-radius: 2rem;
     border: 1px solid white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+    @media (max-width: 800px) {
+        width: 250px;
+    }
+    @media (max-width: 600px) {
+        margin: auto;
+    }
 `
 
 export const StyledProductInfo = styled.div`
     width: 350px;
     text-align: left;
     padding: 2rem;
+
+    @media (max-width: 600px) {
+        margin: auto;
+    }
 `
 export const StyledPriceContainer = styled.div`
     display: flex;

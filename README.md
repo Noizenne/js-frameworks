@@ -34,9 +34,9 @@ Create the other pages:
 
 [x] The CheckoutPage must list all of the products in the cart, show a total at the bottom and a Checkout button.
 
-[ ] Clicking the Checkout button will take the user to the CheckoutSuccessPage.
+[x] Clicking the Checkout button will take the user to the CheckoutSuccessPage.
 
-[ ] The CheckoutSuccessPage should display that the order was successful and clear the cart. There should be a link to go back to the store.
+[x] The CheckoutSuccessPage should display that the order was successful and clear the cart. There should be a link to go back to the store.
 
 On the ContactPage, create the following inputs with the following requirements.
 
@@ -50,14 +50,14 @@ On the ContactPage, create the following inputs with the following requirements.
 
 [x] Submit button
 
-[ ] console.log the data from the form once validation requirements are met.
+[x] console.log the data from the form once validation requirements are met.
 
 [ ] Once your project is done, deploy it to Netlify.
 
 Remember to:
 
-[] Design loader
-[] Design error message
+[x] Design loader
+[x] Design error message
 [] Test
 [] Check responsiveness
 [] Update readme.md

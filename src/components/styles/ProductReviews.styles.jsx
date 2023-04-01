@@ -2,13 +2,24 @@ import styled from "styled-components";
 
 
 export const StyledProductReviews = styled.div`
-    display: flex;
-    flex-direction: column;
-    padding: 0 3rem;
+
+    @media (max-width: 400px) {
+        margin: auto;
+        width: 300px;
+    }
 `
 export const StyledWrapper = styled.div`
     display: flex;
 
+    @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    @media (max-width: 400px) {
+        width: 300px;
+    }
 `
 
 export const StyledContainer = styled.div`
@@ -16,7 +27,6 @@ export const StyledContainer = styled.div`
     margin: 5px;
     border-radius: 10px;
     border: 1px solid ${({theme}) => theme.colors.blue};
-
 `
 export const StyledDesc = styled.div`
     margin-bottom: 20px;
