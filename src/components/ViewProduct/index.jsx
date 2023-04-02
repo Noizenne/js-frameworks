@@ -16,8 +16,8 @@ export default function ViewProduct({ product }) {
         reviews} = product;
 
         useEffect(() => {
-            document.title = "Dings | " + `${title}`;
-        }, [])
+            document.title = `Dings | ${title}`;
+        }, [title])
 
         const {addToCart} = useCart();
         function handleATCBtn() {
