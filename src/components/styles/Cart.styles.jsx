@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 export const StyledHeader = styled.h1`
     display: flex;
     justify-content: center;
@@ -41,11 +42,12 @@ export const StyledItem = styled.div`
 
     @media (max-width: 465px) {
         width: 100%;
-      img {
-        display:none
-      }
+        font-size: 13px;
 
-      font-size: 13px;
+        img {
+            display:none
+        }
+
     }
 `
 
@@ -66,7 +68,7 @@ export const StyledTotal = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 30px;
+    margin: 0 20px;
 `
 export const StyledBtns = styled.div`
     display: flex;
@@ -78,18 +80,19 @@ export const StyledClearBtn = styled.button`
     background-color: ${({theme}) => theme.colors.white};
     color: ${({theme}) => theme.colors.blue};
     border: 1px solid ${({theme}) => theme.colors.blue};
-    border-radius: 20px;
+    border-radius: 10px;
     width: 100px;
     height: 30px;
     
 `
-export const StyledCheckoutBtn = styled.button`
-    margin: 5px;
-    cursor: pointer;
+export const StyledCheckoutBtn = styled(StyledClearBtn)`
     background-color: ${({theme}) => theme.colors.blue};
     color: ${({theme}) => theme.colors.white};
     border: none;
-    border-radius: 20px;
-    width: 100px;
-    height: 30px;
+`
+
+export const StyledBackBtn = styled(StyledCheckoutBtn)`
+    width: 130px;
+    margin-top: 20px;
+
 `

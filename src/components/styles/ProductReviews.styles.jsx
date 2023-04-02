@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const StyledProductReviews = styled.div`
     margin: 0 2rem;
+
     @media (max-width: 600px) {
         display: flex;
         flex-direction: column;
@@ -26,7 +27,7 @@ export const StyledWrapper = styled.div`
 
 export const StyledContainer = styled.div`
     padding: 10px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 10px;
     border: 1px solid ${({theme}) => theme.colors.blue};
 `
@@ -34,8 +35,10 @@ export const StyledDesc = styled.div`
     margin-bottom: 20px;
 `
 export const StyledUsername = styled.div`
+    margin: 10px;
 `
 
 export const StyledRating = styled.div`
     display: flex;
+    align-items: center;
 `

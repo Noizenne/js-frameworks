@@ -49,7 +49,7 @@ export default function ViewProduct({ product }) {
                         </div>
                         <div>{description}</div>
                         <S.StyledPriceContainer>
-                            <S.StyledDiscountedPrice>{discountedPrice < price && discountedPrice},-</S.StyledDiscountedPrice>
+                            <div>{discountedPrice < price && discountedPrice},-</div>
                             <S.StyledPrice isValid={price === discountedPrice}>{price},-</S.StyledPrice>
                         </S.StyledPriceContainer>
                         <S.StyledBtn onClick={() => handleATCBtn()}>Add to cart</S.StyledBtn>

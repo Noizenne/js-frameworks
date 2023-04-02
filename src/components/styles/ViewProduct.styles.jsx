@@ -4,8 +4,7 @@ export const StyledViewProduct = styled.div`
     display: flex;
     justify-content: center;
 `
-export const StyledContainer = styled.div`
-    display: flex;
+export const StyledContainer = styled(StyledViewProduct)`
     flex-direction: column;
     max-width: 100%;
 `
@@ -57,26 +56,24 @@ export const StyledPrice = styled.div`
     color: ${(props) => (props.isValid ? 'black' : 'red')};
     text-decoration: ${(props) => (props.isValid ? 'none' : 'line-through')};
 `
-export const StyledDiscountedPrice = styled.div`
-    color: #4D0F1A;
-`
 
 export const StyledBtn = styled.button`
     width: 130px;
     height: 30px;
     background-color: ${({theme}) => theme.colors.blue};
-    color: #fff;
+    color: ${({theme}) => theme.colors.white};
     font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 `
+
 export const CalcedDiscount = styled.div`
     display: flex; 
     justify-content: center;
     align-items: center;
     float: right;
-    color: #ffffff;
+    color: ${({theme}) => theme.colors.white};
     background-color: #ff0000;
     width: 45px;
     height: 40px;

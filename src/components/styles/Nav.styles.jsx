@@ -3,19 +3,14 @@ import styled from "styled-components";
 export const StyledNav = styled.nav`
 
     font-family: 'Inter', sans-serif;
-    margin-bottom: 30px;
-
-
+    margin-bottom: 20px;
     .container {
         margin: 0 auto;
         padding: 0 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 100%;
     }
-
-
     .menu {
         display: none;
     }
@@ -33,14 +28,11 @@ export const StyledNav = styled.nav`
 
     .nav-elements ul a {
         font-size: 22px;
-        font-weight: 400;
-        color: ${({theme}) => theme.colors.blue};
-        text-decoration: none;
+                text-decoration: none;
     }
 
     .nav-elements ul a.active {
         color: ${({theme}) => theme.colors.blue};
-        font-weight: 500;
         position: relative;
     }
 
@@ -55,8 +47,11 @@ export const StyledNav = styled.nav`
     }
 
     @media (max-width: 768px) {
-    .nav-elements ul li:not(:last-child) {
-        margin-right: 30px;
+    .nav-elements ul  {
+       .CartIcon {
+        margin-right: 50px;
+        margin-top: 10px;
+       } 
     }
     }
 

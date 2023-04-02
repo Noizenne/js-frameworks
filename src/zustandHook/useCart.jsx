@@ -87,27 +87,22 @@ function useCart() {
   const removeItem = useCartStore((state) => state.removeItem);
 
   function addToCart(product) {
-    console.log(cart);
     addItem(product);
   }
 
   function clearCart() {
-    console.log("clear");
     resetCart();
   }
 
   function add(id) {
-    console.log(cart);
     incrementQnty(id);
   }
 
   function decrease(id) {
-    console.log(cart);
     decreaseQnty(id);
   }
 
   function remove(id) {
-    console.log("NO");
     removeItem(id);
   }
 

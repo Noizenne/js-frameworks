@@ -1,13 +1,20 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+export const ProductsContainer = styled.ul`
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 4rem;
+`;
+
 export const ProductWrapper = styled.div`
     border: 1px solid white;
     border-radius: 2rem;
     list-style: none;
-    width: 200px;
+    width: 250px;
     margin: 1rem;
-    box-shadow: rgba(255, 163, 228, 0.2) 0px 8px 24px;
+    box-shadow: rgba(47, 0, 255, 0.2) 0px 8px 24px;
 `;
 
 export const ProductTitle = styled.div`
@@ -26,7 +33,7 @@ export const ProductImageContainer = styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 230px;
 `;
 
 export const ProductImage = styled.img`
@@ -39,7 +46,7 @@ export const ProductImage = styled.img`
 export const ProductRating = styled.div`
     display: flex;
     align-self: center;
-    `;
+ `;
 
 export const ProductPrice = styled.div`
     color: ${(props) => (props.isValid ? 'black' : 'red')};
@@ -52,15 +59,13 @@ export const ProductPrices = styled.div`
     padding: 10px;
 `;
 
-export const ProductButtons = styled.div`
-    display: flex;
+export const ProductButtons = styled(ProductPrices)`
     justify-content: space-around;
-    padding: 1rem;
 `;
 
 export const ProductAddButton = styled.button`
     background-color: ${({theme}) => theme.colors.blue};
-    color: #fff;
+    color: ${({theme}) => theme.colors.white};
     border: none;
     border-radius: 5px;
     font-size: 14px;

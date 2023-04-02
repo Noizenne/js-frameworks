@@ -46,7 +46,7 @@ export const StyledWrapper = styled.div`
             margin-top: 10px;
             background-color:  ${({theme}) => theme.colors.blue};
             color: ${({theme}) => theme.colors.white};
-            border-radius: 20px;
+            border-radius: 10px;
             border: none;
             cursor: pointer;
         }

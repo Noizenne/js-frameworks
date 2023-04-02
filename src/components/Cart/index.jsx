@@ -21,7 +21,7 @@ export default function CartItems() {
                         (addedProducts) => addedProducts === id
                         );
                         return (
-                        <S.StyledItem>
+                        <S.StyledItem key={product.id}>
                             <S.StyledBtn onClick={() => remove(product.id)}><Clear /></S.StyledBtn>
                             <img
                                 src={product.imageUrl}
@@ -71,9 +71,9 @@ export default function CartItems() {
                     <S.StyledWrapper>No items in the cart yet.</S.StyledWrapper>
                     <S.StyledWrapper>
                     <Link to="/">
-                        <S.StyledCheckoutBtn>
+                        <S.StyledBackBtn>
                             Back to Shopping
-                        </S.StyledCheckoutBtn>
+                        </S.StyledBackBtn>
                     </Link>
                     </S.StyledWrapper>
                 </div>
