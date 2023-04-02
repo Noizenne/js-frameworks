@@ -26,7 +26,7 @@ export default function CartItems() {
                             <S.StyledBtn onClick={() => remove(product.id)}><Clear /></S.StyledBtn>
                             <img
                                 src={product.imageUrl}
-                                alt="Product"
+                                alt={product.title}
                             />
                                 <p>{product.title}</p>
                                 <p>NOK {product.discountedPrice},-</p>
@@ -38,7 +38,7 @@ export default function CartItems() {
                     })}
                     </div>
                     <div>
-                        <h3>Order Details</h3>
+                        <S.StyledTotalHeader>Order Details</S.StyledTotalHeader>
                     <S.StyledTotal>
                        <p>Discount:</p> NOK {" "}
                         {cart
@@ -69,7 +69,7 @@ export default function CartItems() {
                 </>
                 ) : (
                 <div>
-                    <p>No items in the cart yet.</p>
+                    <S.StyledWrapper>No items in the cart yet.</S.StyledWrapper>
                     <S.StyledWrapper>
                     <Link to="/">
                         <S.StyledCheckoutBtn>

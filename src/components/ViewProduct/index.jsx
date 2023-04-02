@@ -4,8 +4,13 @@ import * as R from "../styles/ProductReviews.styles";
 import { Rating } from "@mui/material";
 import ProductReviews from "../ProductReviews";
 import { useCart } from "../../zustandHook/useCart";
+import { useEffect } from "react";
 
 export default function ViewProduct({ product }) {
+
+    useEffect(() => {
+        document.title =  `Dings | ${product.title}`
+    }, []);
 
     const {id,
         title,

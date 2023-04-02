@@ -30,6 +30,8 @@ export default function Home() {
         setIsLoading(false)
       }
     }
+
+    document.title ="Dings | Home";
     
     getProducts(API_URL);
 
