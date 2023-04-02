@@ -27,7 +27,7 @@ export default function ProductCard({product}) {
                 <S.ProductPrice isValid={price === discountedPrice}>{price}</S.ProductPrice>
             </S.ProductPrices>
             <S.ProductButtons>
-            <S.ProductsView href={`/product/${id}/`}>View</S.ProductsView>
+            <S.ProductsView to={`/product/${id}/`}>View</S.ProductsView>
             <S.ProductAddButton onClick={() => handleATCBtn()}>Add to cart</S.ProductAddButton>
             </S.ProductButtons>
         </S.ProductWrapper>

@@ -12,7 +12,7 @@ const schema = yup
         .required('Please enter your full name'),
     email: yup
         .string()
-        .email()
+        .email('Your email must be valid')
         .required('Please enter your email'),
     subject: yup
         .string()
@@ -20,8 +20,8 @@ const schema = yup
         .required('Please enter your subject'),
     body: yup
         .string()
-        .min(18, 'Your body must be 3 or higher')
-        .required('Please enter your body'),
+        .min(3, 'Your body must be 3 or higher')
+        .required('Please enter your message'),
     })
     .required();
 
@@ -54,7 +54,7 @@ return (
             <input {...register('subject')} />
             <p>{errors.subject?.message}</p>
             <label>Message</label>
-            <input {...register('body')} />
+            <input className="body" {...register('body')} />
             <p>{errors.body?.message}</p>
             <button type="submit">Submit</button>
         </form>

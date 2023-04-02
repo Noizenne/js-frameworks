@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const ProductWrapper = styled.div`
     border: 1px solid white;
@@ -67,7 +68,7 @@ export const ProductAddButton = styled.button`
     cursor: pointer;
 `;
 
-export const ProductsView = styled.a`
+export const ProductsView = styled(Link)`
     border-radius: 5px;
     border: ${({theme}) => theme.colors.blue} 1px solid;
     padding: 2px;

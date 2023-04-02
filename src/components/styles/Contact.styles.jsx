@@ -30,6 +30,10 @@ export const StyledWrapper = styled.div`
                 outline: 1px solid ${({theme}) => theme.colors.blue};
             }
         }
+
+        .body {
+            height: 150px;
+        }
         p {
             color: red;
             font-size: 14px;
