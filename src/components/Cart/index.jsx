@@ -10,7 +10,6 @@ import { Clear } from "@mui/icons-material";
 export default function CartItems() {
     const {cart, add, decrease, remove, clearCart} = useCart();
 
-    console.log(cart)
     return (
         <S.StyledWrapper>
             <S.StyledContainer>

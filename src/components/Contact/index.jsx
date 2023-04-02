@@ -36,7 +36,6 @@ export default function ContactForm() {
 });
 
 function onSubmit(data) {
-  console.log(data);
   reset();
 }
 
