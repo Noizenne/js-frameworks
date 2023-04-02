@@ -8,10 +8,6 @@ import { useEffect } from "react";
 
 export default function ViewProduct({ product }) {
 
-    useEffect(() => {
-        document.title =  `Dings | ${product.title}`
-    }, []);
-
     const {id,
         title,
         imageUrl, 
@@ -20,6 +16,10 @@ export default function ViewProduct({ product }) {
         discountedPrice, 
         rating, 
         reviews} = product;
+
+        useEffect(() => {
+            document.title = "Dings |" + {title};
+        }, []);
 
         const {addToCart} = useCart();
         function handleATCBtn() {
