@@ -35,7 +35,7 @@ export default function ContactForm() {
     resolver: yupResolver(schema),
 });
 
-function onSubmit(data) {
+function onSubmit() {
   reset();
 }
 

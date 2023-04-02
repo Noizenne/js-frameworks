@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import * as S from "../styles/ViewProduct.styles";
 import * as R from "../styles/ProductReviews.styles";
 import { Rating } from "@mui/material";
@@ -14,6 +14,10 @@ export default function ViewProduct({ product }) {
         discountedPrice, 
         rating, 
         reviews} = product;
+
+        useEffect(() => {
+            document.title = "Dings | " + `${title}`;
+        }, [])
 
         const {addToCart} = useCart();
         function handleATCBtn() {
