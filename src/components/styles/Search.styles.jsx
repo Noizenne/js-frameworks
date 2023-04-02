@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom"
 
 export const StyledSearch = styled.div`
     display: flex;
@@ -43,7 +44,7 @@ export const StyledSearchResults = styled.div`
     position: sticky;
 `
 
-export const StyledSearchedItem = styled.a`
+export const StyledSearchedItem = styled(Link)`
     display: flex;
     justify-content: left;
     height: 30px;
