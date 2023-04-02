@@ -4,8 +4,6 @@ import * as R from "../styles/ProductReviews.styles";
 import { Rating } from "@mui/material";
 import ProductReviews from "../ProductReviews";
 import { useCart } from "../../zustandHook/useCart";
-import { useEffect } from "react";
-
 export default function ViewProduct({ product }) {
 
     const {id,
@@ -16,10 +14,6 @@ export default function ViewProduct({ product }) {
         discountedPrice, 
         rating, 
         reviews} = product;
-
-        useEffect(() => {
-            document.title = "Dings |" + {title};
-        }, []);
 
         const {addToCart} = useCart();
         function handleATCBtn() {

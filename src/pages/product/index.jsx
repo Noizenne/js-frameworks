@@ -31,6 +31,8 @@ export default function Product() {
 
       
       getProduct(API_URL + `/${id}`);
+
+      document.title = `Dings | ${product.title}`;
   
     }, [id]);
   
